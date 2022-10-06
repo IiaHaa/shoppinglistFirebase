@@ -50,8 +50,7 @@ export default function App() {
 
   // Delete product
   const deleteItem = (item) => {
-    // const key = push(child(ref(database), 'list/')).key;
-    // console.log(key);
+    remove(ref(database, 'list/' + item.key));
   }
 
   const listSeparator = () => {
